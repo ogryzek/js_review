@@ -1,20 +1,21 @@
 var Ghost = function(){
   var randy = Math.floor(Math.random()*4 + 1);
+  console.log (randy);
   switch (randy){
     case 1:
-    Ghost.color = "red";
+    this.color = "red";
     break;
 
     case 2:
-    Ghost.color = "pink";
+    this.color = "pink";
     break;
 
     case 3:
-    Ghost.color = "white";
+    this.color = "white";
     break;
 
     default:
-    Ghost.color = "yellow";
+    this.color = "yellow";
   }
 }
 
