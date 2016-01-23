@@ -25,4 +25,17 @@ Using what we've learned from the previous examples, let's implement a PacMan cl
 Use our i[Ruby version](https://github.com/ogryzek/oop_review/blob/master/pacman.rb) as an example.
 ```javascript
 // pacman.js
+var Pacman = function() {
+  extraLives = 2;
+  points = 0;
+  superTime = 0;
+}
+
+Pacman.prototype = {
+  eat: function(obj) {},
+  eatBall: function(ball) {},
+  eatGhost: function(ghost) {},
+  die: function() {},
+  gameOver: function() {}
+}
 ```
