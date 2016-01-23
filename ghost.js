@@ -18,7 +18,3 @@ var Ghost = function(){
     this.color = "yellow";
   }
 }
-
-Ghost.prototype.color = function(color){
-  Ghost.color = color;
-}
