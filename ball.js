@@ -1,4 +1,3 @@
-class ball{
-  var Ball = {
-    this.ball_type: ball_type
-  }
+function Ball (type) {
+  this.type = type === undefined ? "regular" : type ;
+}
