@@ -1,0 +1,3 @@
+var ball = {
+  ballType: "regular"
+};
