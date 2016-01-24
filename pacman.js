@@ -22,7 +22,7 @@ Pacman.prototype = {
          this.superTime = 10;
        }
      },
-  eatGhost: function(ball) {
+  eatGhost: function(ghost) {
        if (this.superTime > 0 ) {
          return points += 2500000;
        } else {
