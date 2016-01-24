@@ -17,4 +17,4 @@ var Ghost = function(){
     default:
     this.color = "yellow";
   }
-}
+};
