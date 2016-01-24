@@ -1,3 +1,3 @@
 function Ball (type) {
-  this.type = type === undefined ? "regular" : type ;
+  this.ballType = type === undefined ? "regular" : "super" ;
 }
