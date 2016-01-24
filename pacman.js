@@ -22,7 +22,7 @@ Pacman.prototype = {
 
   eatBall: function(ball) {
     this.powerTimeLeft -= 1;
-    if (ball.type === "super") {
+    if (ball.ballType === "super") {
       // console.log("Encountered super ball"); // test message
       this.powerTimeLeft = 10;
     } else {
