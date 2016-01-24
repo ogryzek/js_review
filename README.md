@@ -34,7 +34,11 @@ var Pacman = function() {
 Pacman.prototype = {
   eat: function(obj) {},
   eatBall: function(ball) {
+    this.superTime -= 1;
     this.points += ball.ballType === "regular" ? 1000 : 10;
+    if (ball.ballType === "super") {
+      this.superTime = 10;
+    }
   },
   eatGhost: function(ghost) {},
   die: function() {},
