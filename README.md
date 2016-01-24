@@ -26,14 +26,16 @@ Use our i[Ruby version](https://github.com/ogryzek/oop_review/blob/master/pacman
 ```javascript
 // pacman.js
 var Pacman = function() {
-  extraLives = 2;
-  points = 0;
-  superTime = 0;
+  this.extraLives = 2;
+  this.points = 0;
+  this.superTime = 0;
 }
 
 Pacman.prototype = {
   eat: function(obj) {},
-  eatBall: function(ball) {},
+  eatBall: function(ball) {
+    this.points += ball.ballType === "regular" ? 1000 : 10;
+  },
   eatGhost: function(ghost) {},
   die: function() {},
   gameOver: function() {}
